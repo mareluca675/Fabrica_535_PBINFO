@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef unsigned long long ull;
+typedef unsigned int ust;
+
+ust A[10001];
+
+int main()
+{
+    ust n, m, ans = 0;
+    cin >> n >> m;
+
+    for(ust i = 1; i <= n; ++ i) {
+        cin >> A[i];
+        ans += m / A[i];
+    }
+
+    cout << ans;
+
+    return 0;
+}
